@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+%% PP_Report_Cover.tex
+%% V1.5
+%% 2016/11/30
+%% by Rui Santos Cruz
+% !TEX root = ./main.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+% Do not put math or special symbols in the title.
+\title{Visual Attention based Scene Classification \& Labelling}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author names
+%
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph.
+%
+%\IEEEcompsocitemizethanks is a special \thanks that produces the bulleted
+% lists for "first footnote" author affiliations. 
+% Use \IEEEcompsocthanksitem which works much like \item
+% for each affiliation group.
+\author{Avijeet~Gupta,
+        Ayush~Chopra,
+        Feroz~Ahmad% <-this % stops a space
+% Change the Course Name 
+% note: need leading \protect in front of \\ to get a newline within \thanks as
+% \\ is fragile and will error, could use \hfil\break instead.
+\IEEEcompsocitemizethanks{
+\IEEEcompsocthanksitem Name~of~first~Student, nr. 12345,\protect\\ 
+E-mail: student1@tecnico.ulisboa.pt,
+\IEEEcompsocthanksitem Name~of~second~Student, nr. 67890,\protect\\
+E-mail: student2@tecnico.ulisboa.pt,
+\IEEEcompsocthanksitem Name~of~third~Student, nr. 98765,\protect\\
+E-mail: student3@tecnico.ulisboa.pt,\protect\\
+Instituto Superior Técnico, Universidade de Lisboa.\protect\\}% <-this % stops an unwanted space}% <-this % stops an unwanted space
+\thanks{Manuscript received on Month Day, 2999.}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The paper headers
+\markboth{Minor Project}%
+% for a single student
+%{Surname}% : for a single student 
+% for a Group Report 
+{Surname \MakeLowercase{\textit{et al.}}}% : for a Group Report 
+%
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Prints in Subtitle the type of Report
+% PLEASE DO NOT CHANGE THIS SECTION
+\IEEEspecialpapernotice{%
+\ifthenelse{\equal{\ReportType}{activity}}{%
+\tlangRepActivity}{\tlangRepLearning}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
